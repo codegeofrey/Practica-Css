@@ -1,0 +1,110 @@
+    * {
+        box-sizing: border-box; /* Aplica a todos los elementos */ /*<------/ /* me falto mejorar en esa parte */
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: bisque;
+        font-family: Arial, sans-serif; /* Añade una fuente por defecto */    /*lo hace muy practico no lo habia pensado*/
+    }
+
+    header {
+        border: solid 2px black;
+        border-radius: 4px;
+        background-color: aqua;
+        padding: 10px;
+        margin-bottom: 20px; /* Espacio debajo del header */
+    }
+
+    .app-title-pointed {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;                  /* Debo aprender a como manejar mas el Flex y Flexbox luego el Grid tbm */
+    } 
+
+    header ul {
+        list-style: none;
+        display: flex;
+        gap: 10px; /* Espacio entre elementos de la lista */   /* este no hace mucha falta aprenderlo pues lo aprendi al 3 intento */
+    }
+
+    header ul li {
+        margin: 0; /* Elimina márgenes innecesarios */  /*<----  ummm la vrd no cuando si o no se debe eliminar margins innecesarios o paddings la vrd me faltaria consultar de eso */
+    }
+
+    .fusion {
+        display: flex;
+        width: 100%;
+        gap: 20px; /* Espacio entre aside y main */  /*esto tampoco sabia que se podia hacer eso debo consultar mas */
+        min-height: 500px; /* Altura mínima */
+    }
+
+    .fusion aside.new_nav {
+        background: #d41515;
+        border-radius: 10px;
+        width: 150px;
+        padding: 20px; /* Padding interno */   /* bueno aqui no hay nada que hacer*/            
+    }
+
+    .fusion aside ul {
+        list-style: none;
+        padding: 0;
+        text-align: center; /*aqui tampoco*/
+    }
+
+    .fusion aside ul li {
+        background: black;
+        color: white;
+        padding: 10px;
+        margin: 10px 0; /* Espacio entre elementos de la lista */
+        border-radius: 4px; /* Bordes redondeados */     /*tampoco aqui*/
+    }
+
+    h2 {
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 20px; /* Espacio debajo del título */
+    }
+
+    main {
+        background-color: green;
+        flex-grow: 1; /* Ocupa el espacio restante */ /* no se de esa funcion de flex vaya que cansa estudiar mucho termino*/
+        padding: 20px; /* Padding interno */
+        border-radius: 4px; /* Bordes redondeados */
+    }
+
+    .square form {
+        background-color: blue;/**/
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border: 2px solid black;
+        border-radius: 4px;
+    }
+
+    form input {
+        font-style: italic;
+        border-radius: 4px;
+        height: 3em;
+        width: 100%; /* Ocupa el 100% del contenedor */
+        max-width: 300px; /* Ancho máximo */
+        margin: 10px 0; /* Espacio entre inputs */
+        padding: 5px; /* Padding interno */
+    }
+
+    form label {
+        font-size: 20px;
+        font-style: italic;
+        margin: 10px 0; /* Espacio entre labels */
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px; /* Espacio arriba del footer */  /**/
+    }
